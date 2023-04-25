@@ -16,7 +16,7 @@ mod types;
 
 pub mod macros;
 pub mod weights;
-// use orml_traits::MultiCurrency;
+use orml_traits::{MultiCurrency, MultiReservableCurrency};
 
 use codec::{Decode, Encode};
 use frame_support::traits::{

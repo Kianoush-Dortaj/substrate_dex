@@ -24,6 +24,8 @@ sp-core = { version = "7.0.0", default-features = false, path = "../../primitive
 sp-io = { version = "7.0.0", default-features = false, path = "../../primitives/io" }
 sp-runtime = { version = "7.0.0", default-features = false, path = "../../primitives/runtime" }
 sp-std = { version = "5.0.0", default-features = false, path = "../../primitives/std" }
+orml-tokens = { git = "https://github.com/open-web3-stack/open-runtime-module-library.git", default-features = false, version = "0.4.1-dev" }
+orml-traits = { git = "https://github.com/open-web3-stack/open-runtime-module-library.git", default-features = false, version = "0.4.1-dev" }
 
 [dev-dependencies]
 pallet-balances = { version = "4.0.0-dev", path = "../balances" }
@@ -35,6 +37,8 @@ std = [
 	"codec/std",
 	"frame-benchmarking?/std",
 	"frame-support/std",
+	"orml-tokens/std",
+	"orml-traits/std",
 	"frame-system/std",
 	"log/std",
 	"scale-info/std",
