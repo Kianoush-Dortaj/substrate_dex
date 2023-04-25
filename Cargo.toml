@@ -326,3 +326,6 @@ inherits = "release"
 lto = "fat"
 # https://doc.rust-lang.org/rustc/codegen-options/index.html#codegen-units
 codegen-units = 1
+
+[replace]
+"sp-io:7.0.0" = { git = "https://github.com/paritytech/substrate", rev = "18bb7c7c841b101c19a8d1881b893ae8e37de460", package = "sp-io" }
